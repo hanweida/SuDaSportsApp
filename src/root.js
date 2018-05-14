@@ -10,4 +10,4 @@ export default class Root extends Component {
         );
     }
 }
-AppRegistry.registerComponent('NewSuDaSports', () => Root);
+AppRegistry.registerComponent('SuDaSportsApp', () => Root);
