@@ -1,25 +1,7 @@
 import { StackNavigator, TabNavigator } from 'react-navigation';
 
 import { StackNavigatorConfig, TabNavigatorConfig } from '../Config'
-import { Live, Recommend, News, Video } from './index'
-
-const Home = TabNavigator(
-    {
-        Live: {
-            screen: Live,
-        },
-        Recommend: {
-            screen: Recommend,
-        },
-        News: {
-            screen: News,
-        },
-        Video: {
-            screen: Video,
-        },
-    },
-    TabNavigatorConfig,
-);
+import { Live, Recommend, News, Video, Home } from './index'
 
 const TabNav = TabNavigator(
     {
@@ -38,7 +20,21 @@ const Routers = StackNavigator(
         Tab: {
             screen: TabNav,
         },
+        Live: {
+            screen: Live,
+        },
+        Recommend: {
+            screen: Recommend,
+        },
+        News: {
+            screen: News,
+        },
+        Video: {
+            screen: Video,
+        },
     },
-    StackNavigatorConfig,
+    StackNavigatorConfig({
+        initialRouteName: "Tab",
+    }),
 );
 export default Routers;
