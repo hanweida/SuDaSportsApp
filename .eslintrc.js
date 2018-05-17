@@ -45,11 +45,13 @@ module.exports = {
         "import/no-unresolved": 0,
         "import/extensions": 0,
         "import/no-extraneous-dependencies": 0,
-        "jsx-a11y/href-no-hash": 0
+        "jsx-a11y/href-no-hash": 0,
+        "linebreak-style":["error", "windows"]
     },
     "globals": {
         "fetch": true,
         "__DEV__": true,
-        "alert": true
+        "alert": true,
+        "require": true,
     }
 };

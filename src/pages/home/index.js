@@ -66,6 +66,7 @@ export default class Home extends Component {
     }
 
     render() {
+        const { navigation } = this.props;
         return (
             <View style={styles.container}>
                 <View style={styles.tab}>
@@ -94,7 +95,7 @@ export default class Home extends Component {
                     }
                     {this.state.customStyleIndex === 1 &&
                         <View style={styles.container}>
-                            <Live />
+                            <Live tabLabel="直播" navigation={navigation} />
                         </View>
                     }
                     {this.state.customStyleIndex === 2 &&
