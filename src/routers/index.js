@@ -1,7 +1,7 @@
 import Home from '../pages/home/index'
-import ZhiboMatch from '../pages/home/live/Zhibo_Match'
+import Match from '../pages/home/live/Match'
 
 module.exports = {
     Home,
-    ZhiboMatch,
+    Match,
 };
