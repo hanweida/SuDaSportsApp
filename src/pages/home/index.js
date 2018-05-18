@@ -16,6 +16,47 @@ import News from './news/News'
 import Recommend from './recommend/Recommend'
 import Video from './video/Video'
 
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+    },
+    tab: {
+        flexDirection: 'row',
+        height: 48,
+        justifyContent: 'center',
+        borderBottomColor: '#F66A85',
+        backgroundColor: '#FFFFFF',
+    },
+    tabViewText: {
+        color: '#444444',
+        fontWeight: 'bold',
+        fontSize: 18,
+    },
+    titleText: {
+        color: '#444444',
+        padding: 20,
+        fontSize: 14,
+        fontWeight: '500',
+    },
+    headerText: {
+        padding: 8,
+        fontSize: 14,
+        color: '#444444',
+    },
+    tabContent: {
+        backgroundColor: '#000000',
+        flexGrow: 1,
+    },
+    Seperator: {
+        marginHorizontal: -10,
+        alignSelf: 'stretch',
+        borderTopWidth: 1,
+        borderTopColor: '#888888',
+        marginTop: 24,
+    },
+})
+
+// 直播页
 export default class Home extends Component {
     constructor(props) {
         super(props)
@@ -79,7 +120,7 @@ export default class Home extends Component {
                             height: 30, backgroundColor: '#FFFFFF', width: 258, alignSelf: 'center',
                         }}
                         tabStyle={{
-                            backgroundColor: '#FFFFFF', borderWidth: 0, borderColor: '#E7E7E7', borderStyle: 'solid',
+                            backgroundColor: '#FFFFFF', borderWidth: 1, borderColor: '#E7E7E7', borderStyle: 'solid',
                         }}
                         activeTabStyle={{ backgroundColor: 'white', marginTop: 0 }}
                         tabTextStyle={{ color: '#000000' }}
@@ -114,42 +155,3 @@ export default class Home extends Component {
     }
 }
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-    },
-    tab: {
-        flexDirection: 'row',
-        height: 48,
-        justifyContent: 'center',
-        borderBottomColor: '#F66A85',
-        backgroundColor: '#FFFFFF',
-    },
-    tabViewText: {
-        color: '#444444',
-        fontWeight: 'bold',
-        fontSize: 18,
-    },
-    titleText: {
-        color: '#444444',
-        padding: 20,
-        fontSize: 14,
-        fontWeight: '500',
-    },
-    headerText: {
-        padding: 8,
-        fontSize: 14,
-        color: '#444444',
-    },
-    tabContent: {
-        backgroundColor: '#000000',
-        flexGrow: 1,
-    },
-    Seperator: {
-        marginHorizontal: -10,
-        alignSelf: 'stretch',
-        borderTopWidth: 1,
-        borderTopColor: '#888888',
-        marginTop: 24,
-    },
-})

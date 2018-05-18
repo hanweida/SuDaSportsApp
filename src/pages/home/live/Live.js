@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import { View, Text, StyleSheet, Dimensions, SectionList, TouchableOpacity, Image } from 'react-native';
 
 const itemHeight = 90;
@@ -95,6 +94,17 @@ export default class Live extends Component {
                 </Text>
             </View>
         )
+    }
+
+
+    renderLoadingView=() => {
+        return (
+            <View style={styles.container}>
+                <Text>
+                    正在加载...
+                </Text>
+            </View>
+        );
     }
 
     renderItem = ({ item, index }) => {

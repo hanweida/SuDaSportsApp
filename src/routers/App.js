@@ -1,7 +1,7 @@
 import { StackNavigator, TabNavigator } from 'react-navigation';
 
 import { StackNavigatorConfig, TabNavigatorConfig } from '../Config'
-import { Home } from './index'
+import { Home, Zhibo_Match } from './index'
 
 const TabNav = TabNavigator(
     {
@@ -19,6 +19,9 @@ const Routers = StackNavigator(
     {
         Tab: {
             screen: TabNav,
+        },
+        Match: {
+            screen: Zhibo_Match
         },
     },
     StackNavigatorConfig({
