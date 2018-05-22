@@ -21,7 +21,7 @@ const Routers = StackNavigator(
             screen: TabNav,
         },
         Match: {
-            screen: Match
+            screen: Match,
         },
     },
     StackNavigatorConfig({

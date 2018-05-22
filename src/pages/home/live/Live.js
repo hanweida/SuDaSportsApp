@@ -65,7 +65,8 @@ export default class Live extends Component {
         this.mounted = false;
     }
     onTabPress(item) {
-        this.props.prop.navigation.navigate('Zhibo_Match', { item })
+        const { navigation } = this.props;
+        navigation.navigate('Match', { item })
     }
 
     getData() {
