@@ -30,6 +30,10 @@ build/
 local.properties
 *.iml
 .vscode
+.project
+android/*/*.settings
+android/*.settings
+android/app/.classpath
 
 # node.js
 #
